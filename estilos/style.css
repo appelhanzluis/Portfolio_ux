@@ -13,21 +13,21 @@
 /******************Imagenes********************/
 
 #imagen__principal {
-  background-image: url('/img/uxdesign.jpg');
+  background-image: url('../img/uxdesign.jpg');
   background-size: 900px 600px;
   background-position: top;
   background-repeat: no-repeat;
 }
 
 #imagen__aplicacion-1 {
-  background-image: url('/img/jugadores.jpg');
+  background-image: url('../img/jugadores.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 #imagen__aplicacion-2 {
-  background-image: url('/img/plant.jpg');
+  background-image: url('../img/plant.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
