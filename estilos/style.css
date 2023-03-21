@@ -1,0 +1,99 @@
+/****************Items Nav*****************/
+
+.nav-item{
+    text-shadow: 1px 1px 1px black, 0 0 1em white, 0 0 0.2em black;
+}
+
+.nav-item:hover{
+  animation: fadeIn;
+  animation-duration: 2s;
+  text-decoration: underline 2px;
+}
+
+/******************Imagenes********************/
+
+#imagen__principal {
+  background-image: url('/img/uxdesign.jpg');
+  background-size: 900px 600px;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+#imagen__aplicacion-1 {
+  background-image: url('/img/jugadores.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#imagen__aplicacion-2 {
+  background-image: url('/img/plant.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#titulo__one {
+  font-weight: 500;
+  text-shadow: 2px 1px 2px black, 0 0 1em black, 0 0 0.2em white;
+}
+
+#parrafo__principal {
+  font-weight: 400;
+  text-shadow: 2px 1px 2px black, 0 0 1em black, 0 0 0.2em white;
+}
+
+/*************Links*********/
+
+#link__linkedin {
+  color: #0d6efd;
+  text-shadow: 2px 1px 2px black, 0 0 1em black, 0 0 0.2em white;
+}
+
+#link__linkedin:hover{
+  animation: fadeIn;
+  animation-duration: 2s;
+  text-decoration: underline 2px;
+}
+/*************Div Proyectos**********/
+#box__uxproyect-1:hover{
+  background: #000000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+}
+#box__uxproyect-2:hover{
+  background: #000000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+}
+
+/*************Div Cursos***********/
+#box-article-1,
+#box-article-2,
+#box-article-3,
+#box-article-4,
+#box-article-5,
+#box-article-6,
+#box-article-7{
+  background-color: #f2fcfe;
+}
+
+#box-article-1:hover,
+#box-article-2:hover,
+#box-article-3:hover,
+#box-article-4:hover,
+#box-article-5:hover,
+#box-article-6:hover,
+#box-article-7:hover {
+  background: #0d6efd;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #f2fcfe, #0d6efd);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #f2fcfe, #0d6efd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+}
+
+/*********Cuadro Adicional************/
+
+#aditional-box{
+  background-color: #f2fcfe;
+}
