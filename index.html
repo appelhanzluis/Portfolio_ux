@@ -8,6 +8,7 @@
     <meta name="author" content="Luis Appelhanz">
     <title>Portfolio UX - Luis Appelhanz</title>
     <link href="./estilos/style.css" rel="stylesheet">
+    <link href="./estilos/media_querys.css" rel="stylesheet">
     <link href="./estilos/magic.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
@@ -15,34 +16,43 @@
 
 <body>
     <div class="container">
-        <header class="d-flex flex-wrap justify-content-center py-3 mb-1 rounded-bottom text-bg-dark">
-            <a href="index.html"
-                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-light text-decoration-none">
-                <svg class="bi me-2" width="40" height="32">
-                    <use xlink:href="#bootstrap"></use>
-                </svg>
-                <span class="fs-4">User Experience Designer</span>
-            </a>
+        <header class="d-flex flex-wrap justify-content-end py-3 mb-1 rounded-bottom text-bg-dark" id="header-box">
+            <div class="dropdown" id="boton-escondido">
+                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Menu
+                </button>
+                <ul class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuButton1">
+                    <li>
+                        <a class="dropdown-item text-light"
+                            href="https://appelhanzluis.github.io/Presentacion_personal/">Información sobre mi</a><li>
+                    <li>
+                        <a class="dropdown-item text-light" href="#">Estudios</a></li>
+                    <li>
+                        <a class="dropdown-item text-light" href="./files/Programador Web - Luis Appelhanz.pdf"
+                            download="Programador Web/Ux Designer-Luis Appelhanz">Descargar CV</a></li>
+                </ul>
+            </div>
 
             <ul class="nav nav-pills">
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link active" aria-current="page">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                            class="bi bi-house-door" viewBox="0 0 20 20">
-                            <path
-                                d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146ZM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5Z" />
-                        </svg>Inicio
-                    </a>
+                <li class="nav-item-1">
+                    <a href="index.html" class="nav-link active" aria-current="page">Inicio</a>
                 </li>
-                <li class="nav-item"><a href="https://appelhanzluis.github.io/Presentacion_personal/"
-                        class="nav-link text-light">Informacion sobre mi</a></li>
-                <li class="nav-item"><a href="#" class="nav-link text-light">Estudios</a></li>
-                <li class="nav-item"><a href="./files/Programador Web - Luis Appelhanz.pdf" class="nav-link text-light"
-                        download="Programador Web/Ux Designer-Luis Appelhanz">Descargar CV</a></li>
+                <li class="nav-item">
+                    <a href="https://appelhanzluis.github.io/Presentacion_personal/"
+                        class="nav-link text-light">Informacion sobre mi</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-light">Estudios</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./files/Programador Web - Luis Appelhanz.pdf" class="nav-link text-light"
+                        download="Programador Web/Ux Designer-Luis Appelhanz">Descargar CV</a>
+                </li>
             </ul>
         </header>
-
     </div>
+
     <main class="container">
         <div class="p-4 p-md-5 mb-4 rounded text-bg-dark" id="imagen__principal">
             <div class="col-md-6 px-0">
@@ -56,7 +66,8 @@
 
         <div class="row mb-3">
             <div class="col-md-6">
-                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" id="box__uxproyect-1">
+                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+                    id="box__uxproyect-1">
                     <div class="col p-4 d-flex flex-column position-static">
                         <strong class="d-inline-block mb-2 text-primary">Proyecto UX 1</strong>
                         <h3 class="mb-0">Blockchain Tickets App</h3>
@@ -73,140 +84,143 @@
                     </div>
                 </div>
             </div>
+
             <div class="col-md-6">
-                <div
-                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" id="box__uxproyect-2">
-                    <div class="col p-4 d-flex flex-column position-static" id="main-box-2">
+                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+                    id="box__uxproyect-2">
+                    <div class="col p-4 d-flex flex-column position-static">
                         <strong class="d-inline-block mb-2 text-success">Proyecto UX 2</strong>
                         <h3 class="mb-0">Forest App</h3>
                         <div class="mb-1">En desarrollo</div>
-                        <p class="mb-auto">Esta es una aplicación desarrollada con el proposito de forestar las zonas
-                            más aridas de la patagonia</p>
+                        <p class="card-text mb-auto">Esta es una aplicación desarrollada con el proposito de forestar
+                            las zonas más aridas de la patagonia</p>
                         <br>
                         <a href="#" class="btn btn-primary" target="_blank">Proximamente prototipo</a>
                     </div>
                     <div class="col-auto d-none d-lg-block">
-                        <img class="img-fluid" id="imagen__aplicacion-2" width="200" height="250" focusable="false">
+                        <img class="img-fluid" id="imagen__aplicacion-2" width="200" height="250"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="row g-5">
-            <div class="col-md-8">
-                <h3 class="pb-4 mb-4 fst-italic border-bottom">Lo que aprendi en el curso:</h3>
+            <div class="row g-5">
+                <div class="col-md-8">
+                    <h3 class="pb-4 mb-4 fst-italic border-bottom">Lo que aprendi en el curso:</h3>
 
-                <article class="blog-post">
-                    <div class="h-100 p-4 border rounded-3" id="box-article-1">
-                        <h2 class="blog-post-title mb-1">Aspectos básicos del diseño de la experiencia del usuario
-                        </h2>
-                        <ul>
-                            <li>Introducción al diseño de la experiencia del usuario</li>
-                            <li>Familiarizarse con términos, herramientas y frameworks comunes en el diseño de UX</li>
-                            <li>Participar en sprints de diseño</li>
-                            <li>Desarrollo de una presencia profesional</li>
-                        </ul>
-                    </div>
-                    <br>
-                    <div class="h-100 p-4 border rounded-3" id="box-article-2">
-                        <h2 class="blog-post-title mb-1">Primeros pasos en el proceso de diseño de UX: Empatizar,
-                            definir e idear</h2>
-                        <ul>
-                            <li>Integrar la investigación en el proceso de diseño</li>
-                            <li>Empatizar con los usuarios y definir los puntos débiles</li>
-                            <li>Creación de historias de usuario y mapas de recorrido del usuario</li>
-                            <li>Definición de problemas de usuario</li>
-                            <li>Idear soluciones de diseño</li>
-                        </ul>
-                    </div>
-                    <br>
-                    <div class="h-100 p-4 border rounded-3" id="box-article-3">
-                        <h2 class="blog-post-title mb-1">Crear esquemas de página y prototipos de baja fidelidad</h2>
-                        <ul>
-                            <li>Guiones gráficos y creación de esquemas de página</li>
-                            <li>Creación de esquemas de página en papel y digitales</li>
-                            <li>Construcción de prototipos de baja fidelidad</li>
-                        </ul>
-                    </div>
-                    <br>
-                    <div class="h-100 p-4 border rounded-3" id="box-article-4">
-                        <h2 class="blog-post-title mb-1">Llevar a cabo investigaciones en UX</h2>
-                        <ul>
-                            <li>Planificación de estudios de investigación en UX</li>
-                            <li>Investigación con estudios de usabilidad</li>
-                            <li>Analizar y sintetizar los resultados de la investigación</li>
-                            <li>Compartir las conclusiones de la investigación para el desarrollo de mejores diseños
-                            </li>
-                        </ul>
-                    </div>
-                    <br>
-                    <div class="h-100 p-4 border rounded-3" id="box-article-5">
-                        <h2 class="blog-post-title mb-1">Crear prototipos y diseños de alta fidelidad en Figma</h2>
-                        <ul>
-                            <li>Comenzar a crear maquetas</li>
-                            <li>Aplicar los principios del diseño visual a las maquetas.</li>
-                            <li>Exploración de sistemas de diseño</li>
-                            <li>Participar en sesiones de crítica de diseño</li>
-                            <li>Creación de prototipos de alta fidelidad</li>
-                            <li>Probar diseños e iterar para mejorarlos</li>
-                        </ul>
-                    </div>
-                    <br>
-                    <div class="h-100 p-4 border rounded-3" id="box-article-6">
-                        <h2 class="blog-post-title mb-1">Diseños web adaptables en Adobe XD</h2>
-                        <ul>
-                            <li>Crear esquemas de página para un sitio web adaptable</li>
-                            <li>Crear y probar prototipos de baja fidelidad</li>
-                            <li>Crear y probar diseños de alta fidelidad</li>
-                            <li>Documentar el trabajo de diseño y buscar empleo</li>
-                        </ul>
-                    </div>
-                    <br>
-                    <div class="h-100 p-4 border rounded-3" id="box-article-7">
-                        <h2 class="blog-post-title mb-1">Diseñar una experiencia del usuario de una iniciativa de
-                            interés
-                            público y prepararse para el trabajo</h2>
-                        <ul>
-                            <li>Creación de maquetas y prototipos de alta fidelidad</li>
-                            <li>Diseño de un sitio web adaptable complementario</li>
-                            <li>Encontrar un trabajo de UX</li>
-                        </ul>
-                    </div>
-                </article>
-            </div>
+                    <article class="blog-post">
+                        <div class="h-100 p-4 border rounded-3" id="box-article-1">
+                            <h2 class="blog-post-title mb-1">Aspectos básicos del diseño de la experiencia del usuario
+                            </h2>
+                            <ul>
+                                <li>Introducción al diseño de la experiencia del usuario</li>
+                                <li>Familiarizarse con términos, herramientas y frameworks comunes en el diseño de UX
+                                </li>
+                                <li>Participar en sprints de diseño</li>
+                                <li>Desarrollo de una presencia profesional</li>
+                            </ul>
+                        </div>
+                        <br>
+                        <div class="h-100 p-4 border rounded-3" id="box-article-2">
+                            <h2 class="blog-post-title mb-1">Primeros pasos en el proceso de diseño de UX: Empatizar,
+                                definir e idear</h2>
+                            <ul>
+                                <li>Integrar la investigación en el proceso de diseño</li>
+                                <li>Empatizar con los usuarios y definir los puntos débiles</li>
+                                <li>Creación de historias de usuario y mapas de recorrido del usuario</li>
+                                <li>Definición de problemas de usuario</li>
+                                <li>Idear soluciones de diseño</li>
+                            </ul>
+                        </div>
+                        <br>
+                        <div class="h-100 p-4 border rounded-3" id="box-article-3">
+                            <h2 class="blog-post-title mb-1">Crear esquemas de página y prototipos de baja fidelidad
+                            </h2>
+                            <ul>
+                                <li>Guiones gráficos y creación de esquemas de página</li>
+                                <li>Creación de esquemas de página en papel y digitales</li>
+                                <li>Construcción de prototipos de baja fidelidad</li>
+                            </ul>
+                        </div>
+                        <br>
+                        <div class="h-100 p-4 border rounded-3" id="box-article-4">
+                            <h2 class="blog-post-title mb-1">Llevar a cabo investigaciones en UX</h2>
+                            <ul>
+                                <li>Planificación de estudios de investigación en UX</li>
+                                <li>Investigación con estudios de usabilidad</li>
+                                <li>Analizar y sintetizar los resultados de la investigación</li>
+                                <li>Compartir las conclusiones de la investigación para el desarrollo de mejores diseños
+                                </li>
+                            </ul>
+                        </div>
+                        <br>
+                        <div class="h-100 p-4 border rounded-3" id="box-article-5">
+                            <h2 class="blog-post-title mb-1">Crear prototipos y diseños de alta fidelidad en Figma</h2>
+                            <ul>
+                                <li>Comenzar a crear maquetas</li>
+                                <li>Aplicar los principios del diseño visual a las maquetas.</li>
+                                <li>Exploración de sistemas de diseño</li>
+                                <li>Participar en sesiones de crítica de diseño</li>
+                                <li>Creación de prototipos de alta fidelidad</li>
+                                <li>Probar diseños e iterar para mejorarlos</li>
+                            </ul>
+                        </div>
+                        <br>
+                        <div class="h-100 p-4 border rounded-3" id="box-article-6">
+                            <h2 class="blog-post-title mb-1">Diseños web adaptables en Adobe XD</h2>
+                            <ul>
+                                <li>Crear esquemas de página para un sitio web adaptable</li>
+                                <li>Crear y probar prototipos de baja fidelidad</li>
+                                <li>Crear y probar diseños de alta fidelidad</li>
+                                <li>Documentar el trabajo de diseño y buscar empleo</li>
+                            </ul>
+                        </div>
+                        <br>
+                        <div class="h-100 p-4 border rounded-3" id="box-article-7">
+                            <h2 class="blog-post-title mb-1">Diseñar una experiencia del usuario de una iniciativa de
+                                interés
+                                público y prepararse para el trabajo</h2>
+                            <ul>
+                                <li>Creación de maquetas y prototipos de alta fidelidad</li>
+                                <li>Diseño de un sitio web adaptable complementario</li>
+                                <li>Encontrar un trabajo de UX</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
 
-            <div class="col-md-4 rounded">
-                <div class="position-sticky" style="top: 2rem;">
-                    <div class="p-4 mb-3 rounded mt-4 border border-1-light" id="aditional-box">
-                        <h4 class="fst-italic">Programas aprendidos</h4>
-                        <p class="mb-0">En el curso de ux aprendi 2 programas distintos para crear maquetas y
-                            prototipos, Figma y Adobe XD</p>
-                    </div>
+                <div class="col-md-4 rounded">
+                    <div class="position-sticky" style="top: 2rem;">
+                        <div class="p-4 mb-3 rounded mt-4 border border-1-light" id="aditional-box">
+                            <h4 class="fst-italic">Programas aprendidos</h4>
+                            <p class="mb-0">En el curso de ux aprendi 2 programas distintos para crear maquetas y
+                                prototipos, Figma y Adobe XD</p>
+                        </div>
 
-                    <div class="p-4">
-                        <h4 class="fst-italic">Enlaces Proyecto UX 1</h4>
-                        <ol class="list-unstyled mb-0">
-                            <li><a href="https://docs.google.com/presentation/d/121Um13-NYfngovpMV4-cl9EB49HdmwBKj5bQI_-d-FI/edit?usp=sharing"
-                                    target="_blank">Caso Practico</a></li>
-                            <li><a href="https://docs.google.com/presentation/d/1n-zL4Q_xqoFgm6gIUuXeeMBBh_JrKdp-QE-7Myis5lw/edit?usp=sharing"
-                                    target="_blank">Estudio de Usabilidad</a></li>
-                            <li><a href="https://docs.google.com/document/d/1wZu5PYGmbpcitk1WHywN16G1QTgYB3E-Oj9uB5AYLpo/edit?usp=sharing"
-                                    target="_blank">Identificación de Conlusiones</a></li>
-                            <li><a href="https://www.figma.com/proto/doUD3sdIC6gjVer0zhRvK3/Maqueta-Blockchain-Tickets?node-id=96%3A36&starting-point-node-id=96%3A36"
-                                    target="_blank">Prototipo inicial en Figma</a></li>
-                        </ol>
-                    </div>
+                        <div class="p-4">
+                            <h4 class="fst-italic">Enlaces Proyecto UX 1</h4>
+                            <ol class="list-unstyled mb-0">
+                                <li><a href="https://docs.google.com/presentation/d/121Um13-NYfngovpMV4-cl9EB49HdmwBKj5bQI_-d-FI/edit?usp=sharing"
+                                        target="_blank">Caso Practico</a></li>
+                                <li><a href="https://docs.google.com/presentation/d/1n-zL4Q_xqoFgm6gIUuXeeMBBh_JrKdp-QE-7Myis5lw/edit?usp=sharing"
+                                        target="_blank">Estudio de Usabilidad</a></li>
+                                <li><a href="https://docs.google.com/document/d/1wZu5PYGmbpcitk1WHywN16G1QTgYB3E-Oj9uB5AYLpo/edit?usp=sharing"
+                                        target="_blank">Identificación de Conlusiones</a></li>
+                                <li><a href="https://www.figma.com/proto/doUD3sdIC6gjVer0zhRvK3/Maqueta-Blockchain-Tickets?node-id=96%3A36&starting-point-node-id=96%3A36"
+                                        target="_blank">Prototipo inicial en Figma</a></li>
+                            </ol>
+                        </div>
 
-                    <div class="p-4">
-                        <h4 class="fst-italic">Redes</h4>
-                        <ol class="list-unstyled">
-                            <li><a href="https://github.com/appelhanzluis">GitHub</a></li>
-                            <li><a href="https://www.linkedin.com/in/luis-appelhanz">LinkedIn</a></li>
-                        </ol>
+                        <div class="p-4">
+                            <h4 class="fst-italic">Redes</h4>
+                            <ol class="list-unstyled">
+                                <li><a href="https://github.com/appelhanzluis">GitHub</a></li>
+                                <li><a href="https://www.linkedin.com/in/luis-appelhanz">LinkedIn</a></li>
+                            </ol>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
     </main>
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
@@ -217,5 +231,9 @@
 
 </body>
 <script src="./animations/magic.js"></script>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
 
 </html>

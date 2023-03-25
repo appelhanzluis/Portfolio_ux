@@ -9,13 +9,21 @@
   animation-duration: 2s;
   text-decoration: underline 2px;
 }
+/*********Boton Dropdown***********/
+#boton-escondido{
+  display: none;
+}
+.dropdown-item:hover{
+  text-shadow: 1px 1px 1px black, 0 0 1em white, 0 0 0.2em black;
+}
 
 /******************Imagenes********************/
 
 #imagen__principal {
   background-image: url('../img/uxdesign.jpg');
   background-size: 900px 600px;
-  background-position: top;
+  background-position-y: 0px;
+  background-position-x: 220px;
   background-repeat: no-repeat;
 }
 
@@ -48,6 +56,7 @@
 #link__linkedin {
   color: #0d6efd;
   text-shadow: 2px 1px 2px black, 0 0 1em black, 0 0 0.2em white;
+  text-decoration: none;
 }
 
 #link__linkedin:hover{
